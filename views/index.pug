@@ -17,19 +17,18 @@ head
               | Send File
 
           .modal-body
-            //form(role='form' method='POST' action= #{url})
             form(role='form' enctype='multipart/form-data' method='POST' action='/')
               div.form-group
                 label(for='text') Text:
-                input#text.form-control(type='text', placeholder='Текстовая строка' name='text' required)
+                input#text.form-control(type='text', placeholder='Текстовая строка' name='text' )
 
               div.form-group
                 label(for='file1') File 1:
-                input#file1.form-control(type='file', name='file' required)
+                input#file1.form-control(type='file', name='file' )
 
               div.form-group
                 label(for='file2') File 2:
-                input#file2.form-control(type='file', name='file' required)
+                input#file2.form-control(type='file', name='file' )
 
               button.btn.btn-primary(type="submit", name="submit") Submit
 
